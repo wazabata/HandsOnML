@@ -1,1 +1,58 @@
-Test
+Chapter 1 Exercises
+
+1. How would you define Machine Learning
+-> ML is the science and art of programming computers so they can learn from data
+-> The field of study that gives computers the ability to learn without being explicitly programmed
+
+2. Four types of problems where it shines:
+- Help humans learn (data mining)
+- Replace a long list of hand written rules
+- Solve problems that don't have an algorithmic solution
+- Be used as a solution in a dynamic environment with fluctuating conditions -> build a system that adapts to fluctuating environment
+
+3. A labeled training set is a dataset with attributes, one of them being a label (i.e. a solution) to the supervised learning problem
+
+4. Two most common supervised tasks: Classification and regression (categorical vs. continuous supervised learning)
+
+5. Unsupervised tasks: Clustering, visualization, dimensionality reduction, association rule learning (find interesting relationships between attributes in dataset)
+
+6. To teach a machine to walk in various unknown terrains, would use a reinforcement learning (agent tries ...
+ ...  learn a task, with rewards and penalties based on actions,  to find best strategy (policy))
+
+ 7. Clustering (k-means) would be best used to segment customers into multiple groups.
+ .. Can be an unsupervised classification problem, if know the customer groups in advance
+
+ 8. Spam detection could be both a supervised ml problem.
+
+ 9. An online learning system is an ml system that progressively re-trains itself on new data, ...
+ ... (hopefully) continuously improving the model
+ An online learning system can learn incrementally, as opposed to a batch learning system.
+ Benefits: Adapt quickly to changing data, train on very large datasets, can be used in autonomous systems.
+
+ 10. Out of core learning: Algorithms that can learn from a large amount of data (too large to fit in main memory)
+ Break up data in smaller batches and use online learning methods to learn from batches
+
+ 11. Instance based methods (vs model based) makes use of similarity measures to make predictions (KNN)
+ Instance based methods do not perform explicit generalization. Instead, they compare new test instances to all previous instances seen in training
+
+12. A model parameter example: B0, B1 in a linear regression model. A learning algorithm tries to find optimal values for parameters
+... such that model generalizes to new instances. Hyper-parameters are parameters for the learning algorithm itself, not the model ...
+... ie how much regularization to apply
+
+13. Model based learning algorithms search for an optimal value for its parameters, such that it generalizes well to data instances (training ..
+... observations at first, followed by validation instances).  The parameters are chosen to minimize a cost function (mean squared error). A penalty can ..
+... be applied if we are using regularization to discourage model complexity. Predictions are made by feeding new features in the model prediction function,
+... using parameters found by learning algorithm.
+
+14. Four main challenges in ML:
+- Bad quality / scarce data
+- Potential to overfit or under-fit data (with models that are too complex or too simple)
+- Irrelevant / uninformative features
+- Non representative training data
+
+15. If performance is good on training data but can't generalize to new instances could be due to overfitting, which happens because of:
+- Using a model that's too complex
+- Don't have enough training data
+- Too much noise in training data
+
+16. Use a test set to esimate generalization error. 
